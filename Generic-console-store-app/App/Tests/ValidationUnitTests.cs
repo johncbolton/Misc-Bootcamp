@@ -1,4 +1,3 @@
-using System;
 using Xunit;
 using ValidationServies = Service.ValidationService;
 
@@ -13,6 +12,7 @@ namespace Tests
             Assert.False(ValidationServies.ValidateCityName("$#i-t, ci@ty"));
             Assert.False(ValidationServies.ValidateAddress(""));
         }
+
         [Fact]
         public void NameValidationTest()
         {
@@ -21,6 +21,7 @@ namespace Tests
             Assert.False(ValidationServies.ValidatePersonName(" "));
             Assert.False(ValidationServies.ValidatePersonName(""));
         }
+
         [Fact]
         public void AddressValidationTest()
         {
@@ -36,8 +37,8 @@ namespace Tests
             Assert.True(ValidationServies.ValidateString("!@#%^&*(sdfg"));
             Assert.False(ValidationServies.ValidateString(" "));
             Assert.False(ValidationServies.ValidateString(""));
-
         }
+
         [Fact]
         public void ValidtateAddressTest()
         {
@@ -45,8 +46,5 @@ namespace Tests
             Assert.False(ValidationServies.ValidateAddress("!@$%&*(){}[]\\_=|+?"));
             Assert.False(ValidationServies.ValidateAddress(""));
         }
-
-
-        
     }
 }
