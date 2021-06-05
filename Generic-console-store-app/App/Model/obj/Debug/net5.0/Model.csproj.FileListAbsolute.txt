@@ -1,0 +1,71 @@
+C:\Users\Shadow\Desktop\P0\Ruffner-Garrett-P0-master\App\Model\bin\Debug\net5.0\Model.deps.json
+C:\Users\Shadow\Desktop\P0\Ruffner-Garrett-P0-master\App\Model\bin\Debug\net5.0\Model.dll
+C:\Users\Shadow\Desktop\P0\Ruffner-Garrett-P0-master\App\Model\bin\Debug\net5.0\ref\Model.dll
+C:\Users\Shadow\Desktop\P0\Ruffner-Garrett-P0-master\App\Model\bin\Debug\net5.0\Model.pdb
+C:\Users\Shadow\Desktop\P0\Ruffner-Garrett-P0-master\App\Model\obj\Debug\net5.0\Model.csprojAssemblyReference.cache
+C:\Users\Shadow\Desktop\P0\Ruffner-Garrett-P0-master\App\Model\obj\Debug\net5.0\Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Shadow\Desktop\P0\Ruffner-Garrett-P0-master\App\Model\obj\Debug\net5.0\Model.AssemblyInfoInputs.cache
+C:\Users\Shadow\Desktop\P0\Ruffner-Garrett-P0-master\App\Model\obj\Debug\net5.0\Model.AssemblyInfo.cs
+C:\Users\Shadow\Desktop\P0\Ruffner-Garrett-P0-master\App\Model\obj\Debug\net5.0\Model.csproj.CoreCompileInputs.cache
+C:\Users\Shadow\Desktop\P0\Ruffner-Garrett-P0-master\App\Model\obj\Debug\net5.0\Model.dll
+C:\Users\Shadow\Desktop\P0\Ruffner-Garrett-P0-master\App\Model\obj\Debug\net5.0\ref\Model.dll
+C:\Users\Shadow\Desktop\P0\Ruffner-Garrett-P0-master\App\Model\obj\Debug\net5.0\Model.pdb
+C:\Users\Shadow\Desktop\P0\Ruffner-Garrett-P0-master - Copy (2)\App\Model\bin\Debug\net5.0\Model.deps.json
+C:\Users\Shadow\Desktop\P0\Ruffner-Garrett-P0-master - Copy (2)\App\Model\bin\Debug\net5.0\Model.dll
+C:\Users\Shadow\Desktop\P0\Ruffner-Garrett-P0-master - Copy (2)\App\Model\bin\Debug\net5.0\ref\Model.dll
+C:\Users\Shadow\Desktop\P0\Ruffner-Garrett-P0-master - Copy (2)\App\Model\bin\Debug\net5.0\Model.pdb
+C:\Users\Shadow\Desktop\P0\Ruffner-Garrett-P0-master - Copy (2)\App\Model\obj\Debug\net5.0\Model.csprojAssemblyReference.cache
+C:\Users\Shadow\Desktop\P0\Ruffner-Garrett-P0-master - Copy (2)\App\Model\obj\Debug\net5.0\Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Shadow\Desktop\P0\Ruffner-Garrett-P0-master - Copy (2)\App\Model\obj\Debug\net5.0\Model.AssemblyInfoInputs.cache
+C:\Users\Shadow\Desktop\P0\Ruffner-Garrett-P0-master - Copy (2)\App\Model\obj\Debug\net5.0\Model.AssemblyInfo.cs
+C:\Users\Shadow\Desktop\P0\Ruffner-Garrett-P0-master - Copy (2)\App\Model\obj\Debug\net5.0\Model.csproj.CoreCompileInputs.cache
+C:\Users\Shadow\Desktop\P0\Ruffner-Garrett-P0-master - Copy (2)\App\Model\obj\Debug\net5.0\Model.dll
+C:\Users\Shadow\Desktop\P0\Ruffner-Garrett-P0-master - Copy (2)\App\Model\obj\Debug\net5.0\ref\Model.dll
+C:\Users\Shadow\Desktop\P0\Ruffner-Garrett-P0-master - Copy (2)\App\Model\obj\Debug\net5.0\Model.pdb
+C:\Users\Shadow\Desktop\P0\New folder\Ruffner-Garrett-P0-master - Copy (3) - Copy\App\Model\bin\Debug\net5.0\Model.deps.json
+C:\Users\Shadow\Desktop\P0\New folder\Ruffner-Garrett-P0-master - Copy (3) - Copy\App\Model\bin\Debug\net5.0\Model.dll
+C:\Users\Shadow\Desktop\P0\New folder\Ruffner-Garrett-P0-master - Copy (3) - Copy\App\Model\bin\Debug\net5.0\ref\Model.dll
+C:\Users\Shadow\Desktop\P0\New folder\Ruffner-Garrett-P0-master - Copy (3) - Copy\App\Model\bin\Debug\net5.0\Model.pdb
+C:\Users\Shadow\Desktop\P0\New folder\Ruffner-Garrett-P0-master - Copy (3) - Copy\App\Model\obj\Debug\net5.0\Model.csprojAssemblyReference.cache
+C:\Users\Shadow\Desktop\P0\New folder\Ruffner-Garrett-P0-master - Copy (3) - Copy\App\Model\obj\Debug\net5.0\Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Shadow\Desktop\P0\New folder\Ruffner-Garrett-P0-master - Copy (3) - Copy\App\Model\obj\Debug\net5.0\Model.AssemblyInfoInputs.cache
+C:\Users\Shadow\Desktop\P0\New folder\Ruffner-Garrett-P0-master - Copy (3) - Copy\App\Model\obj\Debug\net5.0\Model.AssemblyInfo.cs
+C:\Users\Shadow\Desktop\P0\New folder\Ruffner-Garrett-P0-master - Copy (3) - Copy\App\Model\obj\Debug\net5.0\Model.csproj.CoreCompileInputs.cache
+C:\Users\Shadow\Desktop\P0\New folder\Ruffner-Garrett-P0-master - Copy (3) - Copy\App\Model\obj\Debug\net5.0\Model.dll
+C:\Users\Shadow\Desktop\P0\New folder\Ruffner-Garrett-P0-master - Copy (3) - Copy\App\Model\obj\Debug\net5.0\ref\Model.dll
+C:\Users\Shadow\Desktop\P0\New folder\Ruffner-Garrett-P0-master - Copy (3) - Copy\App\Model\obj\Debug\net5.0\Model.pdb
+C:\Users\Shadow\Desktop\P0\New folder\P0gowiththisone - Copy\App\Model\bin\Debug\net5.0\Model.deps.json
+C:\Users\Shadow\Desktop\P0\New folder\P0gowiththisone - Copy\App\Model\bin\Debug\net5.0\Model.dll
+C:\Users\Shadow\Desktop\P0\New folder\P0gowiththisone - Copy\App\Model\bin\Debug\net5.0\ref\Model.dll
+C:\Users\Shadow\Desktop\P0\New folder\P0gowiththisone - Copy\App\Model\bin\Debug\net5.0\Model.pdb
+C:\Users\Shadow\Desktop\P0\New folder\P0gowiththisone - Copy\App\Model\obj\Debug\net5.0\Model.csprojAssemblyReference.cache
+C:\Users\Shadow\Desktop\P0\New folder\P0gowiththisone - Copy\App\Model\obj\Debug\net5.0\Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Shadow\Desktop\P0\New folder\P0gowiththisone - Copy\App\Model\obj\Debug\net5.0\Model.AssemblyInfoInputs.cache
+C:\Users\Shadow\Desktop\P0\New folder\P0gowiththisone - Copy\App\Model\obj\Debug\net5.0\Model.AssemblyInfo.cs
+C:\Users\Shadow\Desktop\P0\New folder\P0gowiththisone - Copy\App\Model\obj\Debug\net5.0\Model.csproj.CoreCompileInputs.cache
+C:\Users\Shadow\Desktop\P0\New folder\P0gowiththisone - Copy\App\Model\obj\Debug\net5.0\Model.dll
+C:\Users\Shadow\Desktop\P0\New folder\P0gowiththisone - Copy\App\Model\obj\Debug\net5.0\ref\Model.dll
+C:\Users\Shadow\Desktop\P0\New folder\P0gowiththisone - Copy\App\Model\obj\Debug\net5.0\Model.pdb
+C:\Users\Shadow\Desktop\P0\P0gowiththisone - Copy\App\Model\bin\Debug\net5.0\Model.deps.json
+C:\Users\Shadow\Desktop\P0\P0gowiththisone - Copy\App\Model\bin\Debug\net5.0\Model.dll
+C:\Users\Shadow\Desktop\P0\P0gowiththisone - Copy\App\Model\bin\Debug\net5.0\ref\Model.dll
+C:\Users\Shadow\Desktop\P0\P0gowiththisone - Copy\App\Model\bin\Debug\net5.0\Model.pdb
+C:\Users\Shadow\Desktop\P0\P0gowiththisone - Copy\App\Model\obj\Debug\net5.0\Model.csprojAssemblyReference.cache
+C:\Users\Shadow\Desktop\P0\P0gowiththisone - Copy\App\Model\obj\Debug\net5.0\Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Shadow\Desktop\P0\P0gowiththisone - Copy\App\Model\obj\Debug\net5.0\Model.AssemblyInfoInputs.cache
+C:\Users\Shadow\Desktop\P0\P0gowiththisone - Copy\App\Model\obj\Debug\net5.0\Model.AssemblyInfo.cs
+C:\Users\Shadow\Desktop\P0\P0gowiththisone - Copy\App\Model\obj\Debug\net5.0\Model.csproj.CoreCompileInputs.cache
+C:\Users\Shadow\Desktop\P0\P0gowiththisone - Copy\App\Model\obj\Debug\net5.0\Model.dll
+C:\Users\Shadow\Desktop\P0\P0gowiththisone - Copy\App\Model\obj\Debug\net5.0\ref\Model.dll
+C:\Users\Shadow\Desktop\P0\P0gowiththisone - Copy\App\Model\obj\Debug\net5.0\Model.pdb
+C:\Users\Shadow\Desktop\New folder (3)\P0\P0gowiththisone - Copy\App\Model\bin\Debug\net5.0\Model.deps.json
+C:\Users\Shadow\Desktop\New folder (3)\P0\P0gowiththisone - Copy\App\Model\bin\Debug\net5.0\Model.dll
+C:\Users\Shadow\Desktop\New folder (3)\P0\P0gowiththisone - Copy\App\Model\bin\Debug\net5.0\ref\Model.dll
+C:\Users\Shadow\Desktop\New folder (3)\P0\P0gowiththisone - Copy\App\Model\bin\Debug\net5.0\Model.pdb
+C:\Users\Shadow\Desktop\New folder (3)\P0\P0gowiththisone - Copy\App\Model\obj\Debug\net5.0\Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Shadow\Desktop\New folder (3)\P0\P0gowiththisone - Copy\App\Model\obj\Debug\net5.0\Model.AssemblyInfoInputs.cache
+C:\Users\Shadow\Desktop\New folder (3)\P0\P0gowiththisone - Copy\App\Model\obj\Debug\net5.0\Model.AssemblyInfo.cs
+C:\Users\Shadow\Desktop\New folder (3)\P0\P0gowiththisone - Copy\App\Model\obj\Debug\net5.0\Model.csproj.CoreCompileInputs.cache
+C:\Users\Shadow\Desktop\New folder (3)\P0\P0gowiththisone - Copy\App\Model\obj\Debug\net5.0\Model.dll
+C:\Users\Shadow\Desktop\New folder (3)\P0\P0gowiththisone - Copy\App\Model\obj\Debug\net5.0\ref\Model.dll
+C:\Users\Shadow\Desktop\New folder (3)\P0\P0gowiththisone - Copy\App\Model\obj\Debug\net5.0\Model.pdb
