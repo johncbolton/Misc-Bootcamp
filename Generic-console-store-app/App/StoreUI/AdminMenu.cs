@@ -1,8 +1,8 @@
+using Serilog;
 using Service;
 using System;
-using Serilog;
 
-namespace StoreUI
+namespace UI
 {
     public class AdminMenu : IMenu
     {
@@ -17,79 +17,98 @@ namespace StoreUI
 
         public void Start()
         {
-           bool repeat = true;
-            do{
+            var repeat = true;
+            do
+            {
                 Console.Clear();
                 Console.WriteLine("Admin Menu:");
-                Console.WriteLine("[0] Exit/Back");
+                Console.WriteLine("[0] Back");
                 Console.WriteLine("[1] Add Customer");
                 Console.WriteLine("[2] Add Location");
                 Console.WriteLine("[3] Add Product");
                 Console.WriteLine("[4] Add Inventory ");
-                
-                
-                string input = Console.ReadLine();
+
+                var input = Console.ReadLine();
                 switch (input)
                 {
                     case "0":
                         Console.WriteLine("Goodbye");
                         Log.Information("program exit from Admin menu");
                         repeat = false;
-                    break;
+                        break;
+
                     case "1":
 
-                        string name = _validate.ValidationPrompt("Enter First and Last Name:", ValidationService.ValidatePersonName);
-                        string address = _validate.ValidationPrompt("Enter Customer Address:", ValidationService.ValidateAddress);
-                        try{
-                        _services.AddCustomer(name, address);
-                        Console.WriteLine("Customer Added");
-                        }catch(Exception ex){
-
+                        var name = _validate.ValidationPrompt("Enter First and Last Name:",
+                            ValidationService.ValidatePersonName);
+                        var address = _validate.ValidationPrompt("Enter Customer Address:",
+                            ValidationService.ValidateAddress);
+                        var email = _validate.ValidationPrompt("Enter Email For customer",
+                            ValidationService.ValidateEmail);
+                        try
+                        {
+                            _services.AddCustomer(name, address, email);
+                            Console.WriteLine("Customer Added");
+                        }
+                        catch (Exception ex)
+                        {
                             Console.WriteLine(ex.Message);
                         }
 
+                        break;
 
-                    break;
                     case "2":
-                        string locationName = _validate.ValidationPrompt("Enter Location Name:", ValidationService.ValidateString);
+
+                        var locationName =
+                            _validate.ValidationPrompt("Enter Location Name:", ValidationService.ValidateString);
                         Console.Clear();
-                        string locationAddress = _validate.ValidationPrompt("Enter Location Address:",ValidationService.ValidateAddress);
+                        var locationAddress = _validate.ValidationPrompt("Enter Location Address:",
+                            ValidationService.ValidateAddress);
                         Console.Clear();
-                        try{
+                        try
+                        {
                             _services.AddLocation(locationName, locationAddress);
                             Console.WriteLine("Location added");
-                        }catch(Exception ex){
-
+                        }
+                        catch (Exception ex)
+                        {
                             Console.WriteLine(ex.Message);
                         }
 
-                    break;
+                        break;
+
                     case "3":
-                        string productName = _validate.ValidationPrompt("Enter Product Name:", ValidationService.ValidateString);
-                        string productPrice = _validate.ValidationPrompt(String.Format("Enter price for {0}:",productName), ValidationService.ValidateDouble);
-                        try{
+                        var productName =
+                            _validate.ValidationPrompt("Enter Product Name:", ValidationService.ValidateString);
+                        var productPrice = _validate.ValidationPrompt(
+                            string.Format("Enter price for {0}:", productName), ValidationService.ValidateDouble);
+                        try
+                        {
                             _services.AddProduct(productName, Convert.ToDouble(productPrice));
                             Console.WriteLine("Product added");
-                        }catch(Exception ex){
-
+                        }
+                        catch (Exception ex)
+                        {
                             Console.WriteLine(ex.Message);
                         }
 
+                        break;
 
-                    break;
                     case "4":
+
                         MenuFactory.GetMenu("inventorymenu").Start();
-                    
-                    break;
+
+                        break;
+
                     case "5":
 
-                    break;
+                        break;
+
                     default:
                         Console.WriteLine("Choose valid option");
-                    break;
-
+                        break;
                 }
-            } while(repeat);
+            } while (repeat);
         }
     }
 }

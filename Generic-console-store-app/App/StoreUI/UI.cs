@@ -1,11 +1,11 @@
-﻿using System;
-using Serilog;
+﻿using Serilog;
+using System;
 
-namespace StoreUI
+namespace UI
 {
-    class StoreUI
+    internal class UI
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Log.Logger = new LoggerConfiguration()
                 .MinimumLevel.Verbose()
@@ -13,14 +13,16 @@ namespace StoreUI
                 .CreateLogger();
 
             Log.Verbose("Main Menu");
-            try{
-            MenuFactory.GetMenu("mainmenu").Start();
-            }catch(Exception ex){
+            try
+            {
+                MenuFactory.GetMenu("mainmenu").Start();
+            }
+            catch (Exception ex)
+            {
                 Log.Error(ex.Message);
             }
 
-            Log.CloseAndFlush();  
-
+            Log.CloseAndFlush();
         }
     }
 }

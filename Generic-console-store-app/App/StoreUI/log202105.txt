@@ -1,0 +1,32 @@
+2021-05-20 04:20:49.276 -06:00 [VRB] Main Menu
+2021-05-20 04:20:49.411 -06:00 [ERR] The configuration file 'App/appsettings.json' was not found and is not optional. The physical path is 'C:\Users\Shadow\Desktop\P0\Ruffner-Garrett-P0-master - Copy (2)\App\UI\App\appsettings.json'.
+2021-05-20 04:21:05.404 -06:00 [VRB] Main Menu
+2021-05-20 04:21:05.545 -06:00 [ERR] The configuration file 'App/appsettings.json' was not found and is not optional. The physical path is 'C:\Users\Shadow\Desktop\P0\Ruffner-Garrett-P0-master - Copy (2)\App\UI\App\appsettings.json'.
+2021-05-20 04:23:33.108 -06:00 [VRB] Main Menu
+2021-05-20 04:23:47.105 -06:00 [VRB] Searching for Customer: JOE BLOW
+2021-05-20 04:23:48.789 -06:00 [VRB] Found Customer JOE BLOW
+2021-05-20 04:47:47.717 -06:00 [VRB] Main Menu
+2021-05-20 04:48:36.148 -06:00 [VRB] Returned null from Customer Selection
+2021-05-20 04:48:54.706 -06:00 [VRB] Returned null from Location Selection
+2021-05-20 04:50:45.453 -06:00 [INF] program exit from menu
+2021-05-20 04:50:47.563 -06:00 [INF] program exit from Admin menu
+2021-05-20 04:54:05.712 -06:00 [VRB] Main Menu
+2021-05-20 04:54:36.517 -06:00 [VRB] Main Menu
+2021-05-20 04:54:50.461 -06:00 [VRB] Returned null from Customer Selection
+2021-05-20 05:16:29.658 -06:00 [VRB] Main Menu
+2021-05-20 05:17:20.888 -06:00 [INF] program exit from Admin menu
+2021-05-20 07:14:58.731 -06:00 [VRB] Main Menu
+2021-05-20 07:17:18.911 -06:00 [INF] program exit from Admin menu
+2021-05-20 07:18:12.250 -06:00 [VRB] Main Menu
+2021-05-20 07:24:47.095 -06:00 [VRB] Main Menu
+2021-05-20 07:25:39.386 -06:00 [INF] program exit from Admin menu
+2021-05-20 07:40:11.036 -06:00 [VRB] Main Menu
+2021-05-20 07:40:53.659 -06:00 [ERR] The configuration file 'App/appsettings.json' was not found and is not optional. The physical path is 'C:\Users\Shadow\Desktop\P0\P0gowiththisone - Copy\App\UI\App\appsettings.json'.
+2021-05-20 07:41:02.892 -06:00 [VRB] Main Menu
+2021-05-20 07:41:49.825 -06:00 [INF] program exit from Admin menu
+2021-05-20 07:50:19.766 -06:00 [VRB] Main Menu
+2021-05-20 08:08:43.991 -06:00 [INF] program exit from Admin menu
+2021-05-20 08:10:29.044 -06:00 [VRB] Main Menu
+2021-05-20 08:18:53.612 -06:00 [INF] program exit from Admin menu
+2021-05-20 08:19:14.493 -06:00 [VRB] Searching for Customer: Fake Customer
+2021-05-20 08:19:14.533 -06:00 [VRB] Found Customer Fake Customer

@@ -1,6 +1,6 @@
 using System;
 
-namespace StoreUI
+namespace UI
 {
     public interface IValidationUI
     {

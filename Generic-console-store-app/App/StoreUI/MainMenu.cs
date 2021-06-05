@@ -1,15 +1,14 @@
-using System.Linq;
-using System;
-using System.Collections.Generic;
 using Serilog;
 using Service;
 using StoreModels;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
-
-namespace StoreUI
+namespace UI
 {
     public class MainMenu : IMenu
-    {   
+    {
         private IService _services;
         private IValidationUI _validate;
 
@@ -20,10 +19,10 @@ namespace StoreUI
         }
 
         public void Start()
-        {   
-
-            bool repeat = true;
-            do{
+        {
+            var repeat = true;
+            do
+            {
                 Console.Clear();
                 Console.WriteLine("Main Menu, please input your selection:");
                 Console.WriteLine("[0] Exit");
@@ -32,36 +31,37 @@ namespace StoreUI
                 Console.WriteLine("[3] Create Order");
                 Console.WriteLine("[4] Admin Menu");
 
-                
-                string input = Console.ReadLine();
+                var input = Console.ReadLine();
                 switch (input)
                 {
                     case "0":
                         Console.WriteLine("Goodbye");
                         repeat = false;
-                    break;
+                        break;
+
                     case "1":
                         SearchForCustomer();
-                    break;
+                        break;
 
                     case "2":
                         ViewOrders();
-                    break;
+                        break;
+
                     case "3":
                         CreateNewOrder();
 
-                    break;
+                        break;
+
                     case "4":
-                    MenuFactory.GetMenu("adminmenu").Start();
-                           
-                    break;
+                        MenuFactory.GetMenu("adminmenu").Start();
+
+                        break;
+
                     default:
                         Console.WriteLine("Please input a valid choice.");
-                    break;
-
+                        break;
                 }
-            } while(repeat);
-            
+            } while (repeat);
         }
 
         private void SearchForCustomer()
@@ -69,253 +69,280 @@ namespace StoreUI
             string str;
             str = _validate.ValidationPrompt("Enter the Customer Name:", ValidationService.ValidatePersonName);
             Customer target = null;
-            try{
-                target =  _services.SearchCustomers(str);
+            try
+            {
+                target = _services.SearchCustomers(str);
                 Console.Clear();
                 Console.WriteLine("Customer found: {0}", target.ToString());
-            }catch(Exception ex){
-
+            }
+            catch (Exception ex)
+            {
                 Console.WriteLine(ex.Message);
             }
         }
 
-
         private void ViewOrders()
         {
-
-            bool repeat = true;
-                do
+            var repeat = true;
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("View Orders:");
+                Console.WriteLine("[0] Exit");
+                Console.WriteLine("[1] View By customer");
+                Console.WriteLine("[2] View By Location");
+                var str = Console.ReadLine();
+                switch (str)
                 {
-                    Console.Clear();
-                    Console.WriteLine("View Orders:");
-                    Console.WriteLine("[0] Exit");
-                    Console.WriteLine("[1] View By customer");
-                    Console.WriteLine("[2] View By Location");
-                    String str = Console.ReadLine();
-                    switch (str) {
-                        case "0":
-                           repeat = false;
+                    case "0":
+                        repeat = false;
                         break;
-                        case "1":
-                            ViewByCustomer();
-                        break;
-                        case "2":
 
-                            ViewByLocation();
+                    case "1":
+                        ViewByCustomer();
                         break;
-                    }
-                } while (repeat);
+
+                    case "2":
+
+                        ViewByLocation();
+                        break;
+                }
+            } while (repeat);
         }
 
         private void ViewByCustomer()
         {
-            try{ 
-                List<Object> objs = _services.GetAllCustomers().Cast<Object>().ToList<Object>();
-                
-                Object ret = SelectFromList.Start(objs);
-                Customer customer = (Customer) ret;
+            try
+            {
+                var objecs = _services.GetAllCustomers().Cast<object>().ToList<object>();
 
-  
-                bool inpt = true;
-                bool price = true;
-                bool asc = true;
+                var ret = SelectFromList.Start(objecs);
+                var customer = (Customer) ret;
+
+                var inputss = true;
+                var price = true;
+                var asc = true;
                 string str;
-                do{
+                do
+                {
                     Console.Clear();
                     Console.WriteLine("[0] Sort By Price Ascending");
                     Console.WriteLine("[1] Sort By Price Descending");
                     str = Console.ReadLine();
-                    switch(str){
+                    switch (str)
+                    {
                         case "0":
                             price = true;
                             asc = true;
-                            inpt = false;
-                        break;
+                            inputss = false;
+                            break;
+
                         case "1":
                             price = true;
                             asc = false;
-                            inpt = false;
-                        break;
+                            inputss = false;
+                            break;
+
                         default:
                             Console.WriteLine("Invalid entry.");
-                        break;
+                            break;
                     }
-                }while(inpt);
+                } while (inputss);
 
-
-                List<Object> orderList =  _services.GetOrders(customer, price, asc).Cast<Object>().ToList<Object>();
+                var orderList = _services.GetOrders(customer, price, asc).Cast<object>().ToList<object>();
                 ret = SelectFromList.Start(orderList);
-                Order o = (Order) ret;
-                List<Item> items = o.Items;
+                var o = (Order) ret;
+                var items = o.Items;
                 items.ForEach(d => Console.WriteLine(d.ToString()));
-
-            }catch(NullReferenceException ex){
+            }
+            catch (NullReferenceException ex)
+            {
                 Console.WriteLine("Cancelled Selection");
-            }catch(Exception ex){
+            }
+            catch (Exception ex)
+            {
                 Log.Error(ex, ex.Message);
             }
         }
+
         private void ViewByLocation()
         {
-            try{ 
-                List<Object> objs = _services.GetAllLocations().Cast<Object>().ToList<Object>();
-                
-                Object ret = SelectFromList.Start(objs);
-                Location location = (Location) ret;
+            try
+            {
+                var objecs = _services.GetAllLocations().Cast<object>().ToList<object>();
 
-                bool inpt = true;
-                bool price = true;
-                bool asc = true;
+                var ret = SelectFromList.Start(objecs);
+                var location = (Location) ret;
+
+                var inputss = true;
+                var price = true;
+                var asc = true;
                 string str;
-                do{
+                do
+                {
                     Console.Clear();
                     Console.WriteLine("[0] Sort By Price Ascending");
                     Console.WriteLine("[1] Sort By Price Descending");
                     str = Console.ReadLine();
-                    switch(str){
+                    switch (str)
+                    {
                         case "0":
-                            price = true;
                             asc = true;
-                            inpt = false;
-                        break;
+                            inputss = false;
+                            break;
+
                         case "1":
-                            price = true;
                             asc = false;
-                            inpt = false;
-                        break;
+                            inputss = false;
+                            break;
+
                         default:
                             Console.WriteLine("Invalid entry.");
-                        break;
+                            break;
                     }
-                }while(inpt);
+                } while (inputss);
 
-
-                List<Object> orderList =  _services.GetOrders(location, price, asc).Cast<Object>().ToList<Object>();
+                var orderList = _services.GetOrders(location, price, asc).Cast<object>().ToList<object>();
                 ret = SelectFromList.Start(orderList);
-                Order o = (Order) ret;
-                List<Item> items = o.Items;
+                var o = (Order) ret;
+                var items = o.Items;
                 items.ForEach(d => Console.WriteLine(d.ToString()));
-
-            }catch(NullReferenceException ex){
+            }
+            catch (NullReferenceException ex)
+            {
                 Console.WriteLine("Cancelled Selection");
-            }catch(Exception ex){
+            }
+            catch (Exception ex)
+            {
                 Log.Error(ex, ex.Message);
             }
         }
-
 
         private List<Item> GetItems(Location loc)
         {
-            List<Item> selectedItem = new List<Item>();
+            var selectedItem = new List<Item>();
             string str;
-            bool cont = true;
-                try{
-                    do{
+            var cont = true;
+            try
+            {
+                do
+                {
+                    Console.Clear();
+                    var objectList = loc.Inventory.Cast<object>().ToList<object>();
+
+                    var ret = SelectFromList.Start(objectList);
+                    var itm = (Item) ret;
+                    var p = itm.Product;
+                    str = _validate.ValidationPrompt("Enter Quantity to Order:", ValidationService.ValidatePositiveInt);
+
+                    selectedItem.Add(new Item(p, int.Parse(str)));
+                    var innercont = true;
+                    do
+                    {
                         Console.Clear();
-                        List<Object> objectList = loc.Inventory.Cast<Object>().ToList<Object>();
-                        
-                        Object ret = SelectFromList.Start(objectList);
-                        Item itm = (Item) ret;
-                        Product p = itm.Product;
-                        str = _validate.ValidationPrompt("Enter Quantity to Order:", ValidationService.ValidatePositiveInt);
+                        Console.WriteLine("[0] Order");
+                        Console.WriteLine("[1] Add  item");
+                        str = Console.ReadLine();
+                        switch (str)
+                        {
+                            case "0":
+                                innercont = false;
+                                cont = false;
+                                break;
 
-                        selectedItem.Add(new Item(p, int.Parse(str)));
-                        bool innercont = true;
-                        do{
-                            Console.Clear();
-                            Console.WriteLine("[0] Continue With Order");
-                            Console.WriteLine("[1] Add Another Item");
-                            str = Console.ReadLine();
-                            switch(str){
-                                case "0":
-                                    innercont = false;
-                                    cont = false;
+                            case "1":
+                                innercont = false;
                                 break;
-                                case "1":
-                                    innercont = false;
-                                break;
-                                default:
-                                    Console.WriteLine("Invalid entry.");
-                                break;
-                            }
-                        }while(innercont);
 
-                    }while(cont);
-                    
-                }catch(NullReferenceException ex){
-                    Console.WriteLine("Cancelled Item Selection");
-                    
-                }catch(Exception ex){
-                    Log.Error(ex, ex.Message);
-                    
-                }
-                return selectedItem;
+                            default:
+                                Console.WriteLine("Invalid entry.");
+                                break;
+                        }
+                    } while (innercont);
+                } while (cont);
+            }
+            catch (NullReferenceException ex)
+            {
+                Console.WriteLine("Cancelled Item Selection");
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, ex.Message);
+            }
+
+            return selectedItem;
         }
 
         private void CreateNewOrder()
         {
-
-            Customer cust = GetCustomer();
+            var cust = GetCustomer();
             if (cust == null) return;
-            Location loc = GetLocation();
-            if(loc == null) return;
-            List<Item> itms = GetItems(loc);
-            if(itms.Count == 0) return;
-            Double total = _services.CalculateOrderTotal(itms);
+            var loc = GetLocation();
+            if (loc == null) return;
+            var itemss = GetItems(loc);
+            if (itemss.Count == 0) return;
+            var total = _services.CalculateOrderTotal(itemss);
             Console.WriteLine("The order Total is: {0}", total);
-            Console.WriteLine("Press C to complete order\n");
-            ConsoleKeyInfo key = Console.ReadKey();
-            if (key.Key.ToString().ToLower()== "C")
-            {
-                try{
-                    _services.PlaceOrder(loc, cust, itms);
+            Console.WriteLine("Press C to conforim \n");
+            var key = Console.ReadKey();
+            if (key.Key.ToString().ToLower() == "C")
+                try
+                {
+                    _services.PlaceOrder(loc, cust, itemss);
                     Console.WriteLine("Order has been Placed!");
-
-                }catch(Exception ex ){
+                }
+                catch (Exception ex)
+                {
                     Console.WriteLine(ex.Message);
                 }
-            }
         }
 
         private Customer GetCustomer()
         {
             Customer cust = null;
-             try{ 
-                List<Object> objs = _services.GetAllCustomers().Cast<Object>().ToList<Object>();
-                
-                Object ret = SelectFromList.Start(objs);
+            try
+            {
+                var objecs = _services.GetAllCustomers().Cast<object>().ToList<object>();
+
+                var ret = SelectFromList.Start(objecs);
                 cust = (Customer) ret;
 
                 Console.Clear();
                 Console.WriteLine("Customer selected: {0}", cust.ToString());
-
-            }catch(NullReferenceException ex){
-                Console.WriteLine("Cancelled Selection!");
-                
-            }catch(Exception ex){
-               Log.Error(ex, ex.Message);
             }
+            catch (NullReferenceException ex)
+            {
+                Console.WriteLine("Cancelled Selection!");
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, ex.Message);
+            }
+
             return cust;
         }
+
         private Location GetLocation()
         {
             Location loc = null;
-            try{ 
-                List<Object> objectList = _services.GetAllLocations().Cast<Object>().ToList<Object>();
-                
-                Object ret = SelectFromList.Start(objectList);
+            try
+            {
+                var objectList = _services.GetAllLocations().Cast<object>().ToList<object>();
+
+                var ret = SelectFromList.Start(objectList);
                 loc = (Location) ret;
                 Console.Clear();
                 Console.WriteLine("Location selected: {0}", loc.ToString());
-                
-
-            }catch(NullReferenceException ex){
-                Console.WriteLine("Cancelled Location Selection");
-               
-            }catch(Exception ex){
-                Log.Error(ex, ex.Message);
-              
             }
+            catch (NullReferenceException ex)
+            {
+                Console.WriteLine("Cancelled Location Selection");
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, ex.Message);
+            }
+
             return loc;
         }
     }
